@@ -18,14 +18,11 @@ class Counter extends React.Component {
   
     render() {
       return (
-        <div>
-          <h2>Counter</h2>
           <div>
             <span class="dot" onClick={this.decrement}>-</span>
-            <span className="content-counter">{this.state.count}</span>
+            <span className="content-counter">{this.state.count}</span><span class="counter-mb">Mb</span>
             <span class="dot" onClick={this.increment}>+</span>
           </div>
-        </div>
       )
     }
   }
