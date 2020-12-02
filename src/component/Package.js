@@ -9,6 +9,7 @@ import image2 from '../assets/image 2.png';
 import image3 from '../assets/image 3.png';
 import image4 from '../assets/image 4.png';
 import image5 from '../assets/image 5.png';
+import Card from './card';
 
 const btReactForm = () => (
 <div className="container mt-auto p-5">
@@ -32,48 +33,20 @@ const btReactForm = () => (
         <Row className="justify-content-md-center" style={{ textAlign: "center", marginTop: "30px" }}>
           <Col xs={8}><span class="small-text">Includes</span></Col>
         </Row>
-        <Row className="justify-content-md-center" style={{ marginTop: "10px" }}>
-          
-          
-          <Col xs={2}>
-            <Container className="sqCard d-flex justify-content-center">
-              <Row>
-                <Col xs={12} className="d-flex justify-content-center">
-                  <img style={{ height: "64px", marginTop: "30px" }} src={mobile} alt="day"></img>
-                </Col>
-                <Col xs={12} style={{ textAlign: "center", marginTop: "15px" }}>
-                  <p style={{ marginBottom: "30px" }}>MOBILE</p>
-                </Col>
-              </Row>
-            </Container>
+        <Row className="justify-content-md-center" style={{ marginTop: "40px" }}>
+        <Col xs={2}>
+            <Card title={"MOBILE"} img={mobile}/>
             <div  className="question-increment increment-position"><Increment/></div>
-            
+          </Col>
+          
+          <Col xs={2}>
+            <Card title={"TV"} img={mobile}/>
           </Col>
           <Col xs={2}>
-            <Container className="sqCard d-flex justify-content-center">
-              <Row>
-                <Col xs={12} className="d-flex justify-content-center">
-                  <img style={{ height: "64px", marginTop: "30px" }} src={mobile} alt="night"></img>
-                </Col>
-                <Col xs={12} style={{ textAlign: "center", marginTop: "15px" }}>
-                  <p style={{ marginBottom: "30px" }}>TV</p>
-                </Col>
-              </Row>
-            </Container>
+            <Card title={"BROADBAND"} img={mobile}/>
           </Col>
-          <Col xs={2}>
-            <Container className="sqCard d-flex justify-content-center">
-              <Row>
-                <Col xs={12} className="d-flex justify-content-center">
-                  <img style={{ height: "64px", marginTop: "30px" }} src={mobile} alt="allday"></img>
-                </Col>
-                <Col xs={12} style={{ textAlign: "center", marginTop: "15px" }}>
-                  <p style={{ marginBottom: "30px" }}>BROADBAND</p>
-                </Col>
-              </Row>
-            </Container>
-          </Col>
-        </Row>
+          </Row>
+
         <Row className="justify-content-md-center" style={{ textAlign: "center", marginTop: "20px" }}>
           <Col xs={8}><span class="small-text">Internet Speed</span></Col><br/>
         </Row>
@@ -81,74 +54,29 @@ const btReactForm = () => (
         <span class="small-text">RECOMMENDED</span>
 
         <Row className="justify-content-md-center" style={{ textAlign: "center", marginTop: "30px" }}>
-          <Col xs={8}><span class="small-text">TV Pacakges</span></Col>
+          <Col xs={8}><span class="small-text">TV Packges</span></Col>
         </Row>
-        <Row className="justify-content-md-center" style={{ marginTop: "10px" }}>
+
+
+        <Row className="justify-content-md-center" style={{ marginTop: "40px" }}>
+        <Col xs={2}>
+           <span className="now-tv"> <Card title={"NOW TV"} img={image2}/> </span>
+          </Col>
           
-          
           <Col xs={2}>
-            <Container className="sqCard d-flex justify-content-center">
-              <Row>
-                <Col xs={12} className="d-flex justify-content-center">
-                  <img style={{ height: "26px", marginTop: "64px" }} src={image2} alt="day"></img>
-                </Col>
-                <Col xs={12} style={{ textAlign: "center", marginTop: "15px" }}>
-                  <p style={{ marginBottom: "30px" }}>DISNEY+</p>
-                </Col>
-              </Row>
-            </Container>
-            <div  className="question-increment increment-position"><Increment/></div>
-            
+            <Card title={"NETFLIX"} img={image1}/>
           </Col>
           <Col xs={2}>
-            <Container className="sqCard d-flex justify-content-center">
-              <Row>
-                <Col xs={12} className="d-flex justify-content-center">
-                  <img style={{ height: "64px", marginTop: "30px" }} src={image1} alt="night"></img>
-                </Col>
-                <Col xs={12} style={{ textAlign: "center", marginTop: "15px" }}>
-                  <p style={{ marginBottom: "30px" }}>NETFLIX</p>
-                </Col>
-              </Row>
-            </Container>
+            <Card title={"DISNEY+"} img={image3}/>
           </Col>
           <Col xs={2}>
-            <Container className="sqCard d-flex justify-content-center">
-              <Row>
-                <Col xs={12} className="d-flex justify-content-center">
-                  <img style={{ height: "64px", marginTop: "30px" }} src={image3} alt="allday"></img>
-                </Col>
-                <Col xs={12} style={{ textAlign: "center", marginTop: "15px" }}>
-                  <p style={{ marginBottom: "30px" }}>BOXING</p>
-                </Col>
-              </Row>
-            </Container>
+          <span className="amazon-prime"> <Card title={"AMAZON PRIME"} img={image4}/> </span>
           </Col>
           <Col xs={2}>
-            <Container className="sqCard d-flex justify-content-center">
-              <Row>
-                <Col xs={12} className="d-flex justify-content-center">
-                  <img style={{ height: "39px", marginTop: "55px" }} src={image4} alt="allday"></img>
-                </Col>
-                <Col xs={12} style={{ textAlign: "center", marginTop: "15px" }}>
-                  <p style={{ marginBottom: "30px" }}>BOXING</p>
-                </Col>
-              </Row>
-            </Container>
+          <span className="hbo"> <Card title={"HBO"} img={image5}/></span>
           </Col>
-          <Col xs={2}>
-            <Container className="sqCard d-flex justify-content-center">
-              <Row>
-                <Col xs={12} className="d-flex justify-content-center">
-                  <img style={{ height: "35px", marginTop: "59px" }} src={image5} alt="allday"></img>
-                </Col>
-                <Col xs={12} style={{ textAlign: "center", marginTop: "15px" }}>
-                  <p style={{ marginBottom: "30px" }}>BOXING</p>
-                </Col>
-              </Row>
-            </Container>
-          </Col>
-        </Row>
+          </Row>
+
         <Row className="justify-content-md-center" style={{ textAlign: "center", marginTop: "70px" }}>
           <Col xs={8}><span class="">Adjust mobile data usage</span></Col>
         </Row>
