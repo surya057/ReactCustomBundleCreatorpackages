@@ -43,6 +43,7 @@ code {
 .sqCard-active {
   border-radius: 8px;
   border: 1px solid #5514B4;
+  box-shadow: 0px 4px 20px rgba(85, 20, 180, 0.2);
 }
 
 .sqCard:hover {
