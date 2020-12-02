@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import { Button, Form, Col, Container, Row } from 'react-bootstrap';
+import Card from './card';
 import mobile from '../assets/mobile.png'
 import phone from '../assets/phone.png'
 import tv from '../assets/tv.png'
@@ -12,6 +13,18 @@ import other from '../assets/other.png'
 import day from '../assets/day.png'
 import night from '../assets/night.png'
 import allday from '../assets/24.png'
+import movie from '../assets/movie.png'
+import sport from '../assets/sports.png'
+import news from '../assets/news.png'
+import rugby from '../assets/rugby.png'
+import football from '../assets/football.png'
+import boxing from '../assets/boxing.png'
+import mma from '../assets/mma.png'
+import cricket from '../assets/cricket.png'
+import texting from '../assets/texting.png'
+import streaming from '../assets/streaming.png'
+import gaming from '../assets/gaming.png'
+import socialmedia from '../assets/socialmedia.png'
 
 
 class Question1 extends Component {
@@ -47,6 +60,7 @@ class Question1 extends Component {
 };
 
 class Question2 extends Component {
+  
 
   render() {
 
@@ -58,54 +72,17 @@ class Question2 extends Component {
         </Row>
         <Row className="justify-content-md-center" style={{ marginTop: "40px" }}>
           <Col xs={2}>
-            <Container className="sqCard d-flex justify-content-center">
-              <Row>
-                <Col xs={12} className="d-flex justify-content-center">
-                  <img style={{ height: "64px", marginTop: "30px" }} src={mobile} alt="mobile"></img>
-                </Col>
-                <Col xs={12} style={{ textAlign: "center", marginTop: "15px" }}>
-                  <p style={{ marginBottom: "30px" }}>MOBILE</p>
-                </Col>
-              </Row>
-            </Container>
+            <Card title={"MOBILE"} img={mobile}/>
           </Col>
           <Col xs={2}>
-            <Container className="sqCard d-flex justify-content-center">
-              <Row>
-                <Col xs={12} className="d-flex justify-content-center">
-                  <img style={{ height: "64px", marginTop: "30px" }} src={tv} alt="tv"></img>
-                </Col>
-                <Col xs={12} style={{ textAlign: "center", marginTop: "15px" }}>
-                  <p style={{ marginBottom: "30px" }}>TV</p>
-                </Col>
-              </Row>
-            </Container>
+            <Card title={"TV"} img={tv}/>
           </Col>
           <Col xs={2}>
-            <Container className="sqCard d-flex justify-content-center">
-              <Row>
-                <Col xs={12} className="d-flex justify-content-center">
-                  <img style={{ height: "64px", marginTop: "30px" }} src={phone} alt="phone"></img>
-                </Col>
-                <Col xs={12} style={{ textAlign: "center", marginTop: "15px" }}>
-                  <p style={{ marginBottom: "30px" }}>LANDLINE</p>
-                </Col>
-              </Row>
-            </Container>
+            <Card title={"LANDLINE"} img={phone}/>
           </Col>
           <Col xs={2}>
-            <Container className="sqCard d-flex justify-content-center">
-              <Row>
-                <Col xs={12} className="d-flex justify-content-center">
-                  <img style={{ height: "64px", marginTop: "30px" }} src={laptop} alt="laptop"></img>
-                </Col>
-                <Col xs={12} style={{ textAlign: "center", marginTop: "15px" }}>
-                  <p style={{ marginBottom: "30px" }}>LAPTOP/PC</p>
-                </Col>
-              </Row>
-            </Container>
+            <Card title={"LAPTOP/PC"} img={laptop}/>
           </Col>
-          
         </Row>
         <Row className="justify-content-center" style={{ marginTop: "40px", marginBottom: "50px" }}>
           <Col className="text-center" xs={6}>
@@ -129,64 +106,19 @@ class Question3 extends Component {
         </Row>
         <Row className="justify-content-md-center" style={{ marginTop: "40px" }}>
           <Col xs={2}>
-            <Container className="sqCard d-flex justify-content-center">
-              <Row>
-                <Col xs={12} className="d-flex justify-content-center">
-                  <img style={{ height: "64px", marginTop: "30px" }} src={me} alt="justme"></img>
-                </Col>
-                <Col xs={12} style={{ textAlign: "center", marginTop: "15px" }}>
-                  <p style={{ marginBottom: "30px" }}>JUST ME</p>
-                </Col>
-              </Row>
-            </Container>
+            <Card title={"JUST ME"} img={me}/>
           </Col>
           <Col xs={2}>
-            <Container className="sqCard d-flex justify-content-center">
-              <Row>
-                <Col xs={12} className="d-flex justify-content-center">
-                  <img style={{ height: "64px", marginTop: "30px" }} src={partner} alt="partner"></img>
-                </Col>
-                <Col xs={12} style={{ textAlign: "center", marginTop: "15px" }}>
-                  <p style={{ marginBottom: "30px" }}>MY PARTNER</p>
-                </Col>
-              </Row>
-            </Container>
+            <Card title={"MY PARTNER"} img={partner}/>
           </Col>
           <Col xs={2}>
-            <Container className="sqCard d-flex justify-content-center">
-              <Row>
-                <Col xs={12} className="d-flex justify-content-center">
-                  <img style={{ height: "64px", marginTop: "30px" }} src={partnerk} alt="partnerkids"></img>
-                </Col>
-                <Col xs={12} style={{ textAlign: "center", marginTop: "15px" }}>
-                  <p style={{ marginBottom: "30px" }}>PARTNER & KIDS</p>
-                </Col>
-              </Row>
-            </Container>
+            <Card title={"PARTNER & KIDS"} img={partnerk}/>
           </Col>
           <Col xs={2}>
-            <Container className="sqCard d-flex justify-content-center">
-              <Row>
-                <Col xs={12} className="d-flex justify-content-center">
-                  <img style={{ height: "64px", marginTop: "30px" }} src={kids} alt="kids"></img>
-                </Col>
-                <Col xs={12} style={{ textAlign: "center", marginTop: "15px" }}>
-                  <p style={{ marginBottom: "30px" }}>MY KIDS</p>
-                </Col>
-              </Row>
-            </Container>
+            <Card title={"MY KIDS"} img={kids}/>
           </Col>
           <Col xs={2}>
-            <Container className="sqCard d-flex justify-content-center">
-              <Row>
-                <Col xs={12} className="d-flex justify-content-center">
-                  <img style={{ height: "64px", marginTop: "30px" }} src={other} alt="other"></img>
-                </Col>
-                <Col xs={12} style={{ textAlign: "center", marginTop: "15px" }}>
-                  <p style={{ marginBottom: "30px" }}>OTHER</p>
-                </Col>
-              </Row>
-            </Container>
+            <Card title={"OTHER"} img={other}/>
           </Col>
           
         </Row>
@@ -211,45 +143,15 @@ class Question4 extends Component {
           <Col xs={8}><h1 style={{ fontFamily: "GT-Walsheim" }}>When is your internet used most?</h1></Col>
         </Row>
         <Row className="justify-content-md-center" style={{ marginTop: "40px" }}>
-          
-          
           <Col xs={2}>
-            <Container className="sqCard d-flex justify-content-center">
-              <Row>
-                <Col xs={12} className="d-flex justify-content-center">
-                  <img style={{ height: "64px", marginTop: "30px" }} src={day} alt="day"></img>
-                </Col>
-                <Col xs={12} style={{ textAlign: "center", marginTop: "15px" }}>
-                  <p style={{ marginBottom: "30px" }}>DAY</p>
-                </Col>
-              </Row>
-            </Container>
+            <Card title={"DAY"} img={day}/>
           </Col>
           <Col xs={2}>
-            <Container className="sqCard d-flex justify-content-center">
-              <Row>
-                <Col xs={12} className="d-flex justify-content-center">
-                  <img style={{ height: "64px", marginTop: "30px" }} src={night} alt="night"></img>
-                </Col>
-                <Col xs={12} style={{ textAlign: "center", marginTop: "15px" }}>
-                  <p style={{ marginBottom: "30px" }}>NIGHT</p>
-                </Col>
-              </Row>
-            </Container>
+            <Card title={"NIGHT"} img={night}/>
           </Col>
           <Col xs={2}>
-            <Container className="sqCard d-flex justify-content-center">
-              <Row>
-                <Col xs={12} className="d-flex justify-content-center">
-                  <img style={{ height: "64px", marginTop: "30px" }} src={allday} alt="allday"></img>
-                </Col>
-                <Col xs={12} style={{ textAlign: "center", marginTop: "15px" }}>
-                  <p style={{ marginBottom: "30px" }}>ALL DAY</p>
-                </Col>
-              </Row>
-            </Container>
+            <Card title={"ALL DAY"} img={allday}/>
           </Col>
-          
         </Row>
         <Row className="justify-content-center" style={{ marginTop: "40px", marginBottom: "50px" }}>
           <Col className="text-center" xs={6}>
@@ -276,55 +178,17 @@ class Question5 extends Component {
         </Row>
         <Row className="justify-content-md-center" style={{ marginTop: "40px" }}>
           <Col xs={2}>
-            <Container className="sqCard d-flex justify-content-center">
-              <Row>
-                <Col xs={12} className="d-flex justify-content-center">
-                  <img style={{ height: "64px", marginTop: "30px" }} src={mobile} alt="mobile"></img>
-                </Col>
-                <Col xs={12} style={{ textAlign: "center", marginTop: "15px" }}>
-                  <p style={{ marginBottom: "30px" }}>MOBILE</p>
-                </Col>
-              </Row>
-            </Container>
+            <Card title={"MOBILE"} img={mobile}/>
           </Col>
           <Col xs={2}>
-            <Container className="sqCard d-flex justify-content-center">
-              <Row>
-                <Col xs={12} className="d-flex justify-content-center">
-                  <img style={{ height: "64px", marginTop: "30px" }} src={tv} alt="tv"></img>
-                </Col>
-                <Col xs={12} style={{ textAlign: "center", marginTop: "15px" }}>
-                  <p style={{ marginBottom: "30px" }}>TV</p>
-                </Col>
-              </Row>
-            </Container>
+            <Card title={"TV"} img={tv}/>
           </Col>
           <Col xs={2}>
-            <Container className="sqCard d-flex justify-content-center">
-              <Row>
-                <Col xs={12} className="d-flex justify-content-center">
-                  <img style={{ height: "64px", marginTop: "30px" }} src={phone} alt="phone"></img>
-                </Col>
-                <Col xs={12} style={{ textAlign: "center", marginTop: "15px" }}>
-                  <p style={{ marginBottom: "30px" }}>LANDLINE</p>
-                </Col>
-              </Row>
-            </Container>
+            <Card title={"LANDLINE"} img={phone}/>
           </Col>
           <Col xs={2}>
-            <Container className="sqCard d-flex justify-content-center">
-              <Row>
-                <Col xs={12} className="d-flex justify-content-center">
-                  <img style={{ height: "64px", marginTop: "30px" }} src={laptop} alt="laptop"></img>
-                </Col>
-                <Col xs={12} style={{ textAlign: "center", marginTop: "15px" }}>
-                  <p style={{ marginBottom: "30px" }}>LAPTOP/PC</p>
-                </Col>
-              </Row>
-            </Container>
+            <Card title={"LAPTOP/PC"} img={laptop}/>
           </Col>
-          
-          
         </Row>
         <Row className="justify-content-center" style={{ marginTop: "40px", marginBottom: "50px" }}>
           <Col className="text-center" xs={6}>
@@ -348,54 +212,17 @@ class Question6 extends Component {
         </Row>
         <Row className="justify-content-md-center" style={{ marginTop: "40px" }}>
           <Col xs={2}>
-            <Container className="sqCard d-flex justify-content-center">
-              <Row>
-                <Col xs={12} className="d-flex justify-content-center">
-                  <img style={{ height: "64px", marginTop: "30px" }} src={mobile} alt="mobile"></img>
-                </Col>
-                <Col xs={12} style={{ textAlign: "center", marginTop: "15px" }}>
-                  <p style={{ marginBottom: "30px" }}>MOVIES</p>
-                </Col>
-              </Row>
-            </Container>
+            <Card title={"MOVIES"} img={movie}/>
           </Col>
           <Col xs={2}>
-            <Container className="sqCard d-flex justify-content-center">
-              <Row>
-                <Col xs={12} className="d-flex justify-content-center">
-                  <img style={{ height: "64px", marginTop: "30px" }} src={tv} alt="tv"></img>
-                </Col>
-                <Col xs={12} style={{ textAlign: "center", marginTop: "15px" }}>
-                  <p style={{ marginBottom: "30px" }}>SPORTS</p>
-                </Col>
-              </Row>
-            </Container>
+            <Card title={"SPORTS"} img={sport}/>
           </Col>
           <Col xs={2}>
-            <Container className="sqCard d-flex justify-content-center">
-              <Row>
-                <Col xs={12} className="d-flex justify-content-center">
-                  <img style={{ height: "64px", marginTop: "30px" }} src={phone} alt="phone"></img>
-                </Col>
-                <Col xs={12} style={{ textAlign: "center", marginTop: "15px" }}>
-                  <p style={{ marginBottom: "30px" }}>TV SERIES</p>
-                </Col>
-              </Row>
-            </Container>
+            <Card title={"TV SERIES"} img={tv}/>
           </Col>
           <Col xs={2}>
-            <Container className="sqCard d-flex justify-content-center">
-              <Row>
-                <Col xs={12} className="d-flex justify-content-center">
-                  <img style={{ height: "64px", marginTop: "30px" }} src={laptop} alt="laptop"></img>
-                </Col>
-                <Col xs={12} style={{ textAlign: "center", marginTop: "15px" }}>
-                  <p style={{ marginBottom: "30px" }}>NEWS</p>
-                </Col>
-              </Row>
-            </Container>
+            <Card title={"NEWS"} img={news}/>
           </Col>
-          
         </Row>
         <Row className="justify-content-center" style={{ marginTop: "40px", marginBottom: "50px" }}>
           <Col className="text-center" xs={6}>
@@ -415,70 +242,24 @@ class Question7 extends Component {
     return (
       <Container>
         <Row className="justify-content-md-center" style={{ textAlign: "center", marginTop: "100px" }}>
-          <Col xs={8}><h1 style={{ fontFamily: "GT-Walsheim" }}>Great! We love Sports! Which Sports do you like?</h1></Col>
+          <Col xs={8}><h1 style={{ fontFamily: "GT-Walsheim" }}>Great! We love sports! Which sports do you like?</h1></Col>
         </Row>
         <Row className="justify-content-md-center" style={{ marginTop: "40px" }}>
           <Col xs={2}>
-            <Container className="sqCard d-flex justify-content-center">
-              <Row>
-                <Col xs={12} className="d-flex justify-content-center">
-                  <img style={{ height: "64px", marginTop: "30px" }} src={mobile} alt="mobile"></img>
-                </Col>
-                <Col xs={12} style={{ textAlign: "center", marginTop: "15px" }}>
-                  <p style={{ marginBottom: "30px" }}>RUGBY UNION</p>
-                </Col>
-              </Row>
-            </Container>
+            <Card title={"RUGBY UNION"} img={rugby}/>
           </Col>
           <Col xs={2}>
-            <Container className="sqCard d-flex justify-content-center">
-              <Row>
-                <Col xs={12} className="d-flex justify-content-center">
-                  <img style={{ height: "64px", marginTop: "30px" }} src={tv} alt="tv"></img>
-                </Col>
-                <Col xs={12} style={{ textAlign: "center", marginTop: "15px" }}>
-                  <p style={{ marginBottom: "30px" }}>FOOTBALL</p>
-                </Col>
-              </Row>
-            </Container>
+            <Card title={"FOOTBALL"} img={football}/>
           </Col>
           <Col xs={2}>
-            <Container className="sqCard d-flex justify-content-center">
-              <Row>
-                <Col xs={12} className="d-flex justify-content-center">
-                  <img style={{ height: "64px", marginTop: "30px" }} src={phone} alt="phone"></img>
-                </Col>
-                <Col xs={12} style={{ textAlign: "center", marginTop: "15px" }}>
-                  <p style={{ marginBottom: "30px" }}>BOXING</p>
-                </Col>
-              </Row>
-            </Container>
+            <Card title={"BOXING"} img={boxing}/>
           </Col>
           <Col xs={2}>
-            <Container className="sqCard d-flex justify-content-center">
-              <Row>
-                <Col xs={12} className="d-flex justify-content-center">
-                  <img style={{ height: "64px", marginTop: "30px" }} src={laptop} alt="laptop"></img>
-                </Col>
-                <Col xs={12} style={{ textAlign: "center", marginTop: "15px" }}>
-                  <p style={{ marginBottom: "30px" }}>MMA</p>
-                </Col>
-              </Row>
-            </Container>
+            <Card title={"MMA"} img={mma}/>
           </Col>
           <Col xs={2}>
-            <Container className="sqCard d-flex justify-content-center">
-              <Row>
-                <Col xs={12} className="d-flex justify-content-center">
-                  <img style={{ height: "64px", marginTop: "30px" }} src={laptop} alt="laptop"></img>
-                </Col>
-                <Col xs={12} style={{ textAlign: "center", marginTop: "15px" }}>
-                  <p style={{ marginBottom: "30px" }}>CRICKET</p>
-                </Col>
-              </Row>
-            </Container>
-          </Col>
-          
+            <Card title={"CRICKET"} img={cricket}/>
+          </Col>         
         </Row>
         <Row className="justify-content-center" style={{ marginTop: "40px", marginBottom: "50px" }}>
           <Col className="text-center" xs={6}>
@@ -502,74 +283,58 @@ class Question8 extends Component {
         </Row>
         <Row className="justify-content-md-center" style={{ marginTop: "40px" }}>
           <Col xs={2}>
-            <Container className="sqCard d-flex justify-content-center">
-              <Row>
-                <Col xs={12} className="d-flex justify-content-center">
-                  <img style={{ height: "64px", marginTop: "30px" }} src={mobile} alt="mobile"></img>
-                </Col>
-                <Col xs={12} style={{ textAlign: "center", marginTop: "15px" }}>
-                  <p style={{ marginBottom: "30px" }}>PHONE CALLS</p>
-                </Col>
-              </Row>
-            </Container>
+            <Card title={"PHONE CALLS"} img={phone}/>
           </Col>
           <Col xs={2}>
-            <Container className="sqCard d-flex justify-content-center">
-              <Row>
-                <Col xs={12} className="d-flex justify-content-center">
-                  <img style={{ height: "64px", marginTop: "30px" }} src={tv} alt="tv"></img>
-                </Col>
-                <Col xs={12} style={{ textAlign: "center", marginTop: "15px" }}>
-                  <p style={{ marginBottom: "30px" }}>SOCIAL MEDIA</p>
-                </Col>
-              </Row>
-            </Container>
+            <Card title={"SOCIAL MEDIA"} img={socialmedia}/>
           </Col>
           <Col xs={2}>
-            <Container className="sqCard d-flex justify-content-center">
-              <Row>
-                <Col xs={12} className="d-flex justify-content-center">
-                  <img style={{ height: "64px", marginTop: "30px" }} src={phone} alt="phone"></img>
-                </Col>
-                <Col xs={12} style={{ textAlign: "center", marginTop: "15px" }}>
-                  <p style={{ marginBottom: "30px" }}>GAMING</p>
-                </Col>
-              </Row>
-            </Container>
+            <Card title={"GAMING"} img={gaming}/>
           </Col>
           <Col xs={2}>
-            <Container className="sqCard d-flex justify-content-center">
-              <Row>
-                <Col xs={12} className="d-flex justify-content-center">
-                  <img style={{ height: "64px", marginTop: "30px" }} src={laptop} alt="laptop"></img>
-                </Col>
-                <Col xs={12} style={{ textAlign: "center", marginTop: "15px" }}>
-                  <p style={{ marginBottom: "30px" }}>STREAMING</p>
-                </Col>
-              </Row>
-            </Container>
+            <Card title={"STREAMING"} img={streaming}/>
           </Col>
           <Col xs={2}>
-            <Container className="sqCard d-flex justify-content-center">
-              <Row>
-                <Col xs={12} className="d-flex justify-content-center">
-                  <img style={{ height: "64px", marginTop: "30px" }} src={laptop} alt="laptop"></img>
-                </Col>
-                <Col xs={12} style={{ textAlign: "center", marginTop: "15px" }}>
-                  <p style={{ marginBottom: "30px" }}>TEXTING</p>
-                </Col>
-              </Row>
-            </Container>
+            <Card title={"CRICKET"} img={cricket}/>
           </Col>
-          
+          <Col xs={2}>
+            <Card title={"TEXTING"} img={cricket}/>
+          </Col>         
         </Row>
         <Row className="justify-content-center" style={{ marginTop: "40px", marginBottom: "50px" }}>
           <Col className="text-center" xs={6}>
-            <Button className="bt-btn" href="/loading" variant="" type="submit">
+            <Button className="bt-btn" href="/question9" variant="" type="submit">
               NEXT
             </Button>
           </Col>
         </Row>
+      </Container>
+      
+    )
+  }
+};
+
+class Question9 extends Component {
+  render() {
+    return (
+      <Container>
+        <Row className="justify-content-md-center" style={{ textAlign: "center", marginTop: "100px" }}>
+          <Col xs={8}><h1 style={{ fontFamily: "GT-Walsheim" }}>Nearly there, where do you call home?</h1></Col>
+        </Row>
+
+        <Row className="justify-content-md-center" style={{ marginTop: "40px" }}>
+          <Col xs={3}>
+            <Form.Control type="email" placeholder="POST CODE" />
+            <Form.Text className="text-muted">
+            </Form.Text>
+          </Col>
+          <Col className="text-center" xs={3}>
+            <Button style={{ backgroundColor: "#5514b4", color: "white", width: "100%" }} href="/map" variant="" type="submit">
+              NEXT
+            </Button>
+          </Col>
+        </Row>
+        
       </Container>
       
     )
@@ -585,4 +350,5 @@ export {
   Question5, 
   Question6,
   Question7,
-  Question8 };
+  Question8,
+  Question9 };
