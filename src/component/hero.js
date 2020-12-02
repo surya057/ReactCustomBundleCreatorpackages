@@ -12,7 +12,7 @@ const JumbotronConst = () => (
     <p>Now's the time to renew or upgrade to a package that suits you. And most broadband upgrades don’t need an engineer visit.</p>
     <p> All TV packages half price for three months</p>
     <p className="lead">
-      <a  className="bt-color btn btn-lg" href="/loginForm" role="button">Log in for your deals</a>
+      <a  className="bt-color btn btn-lg" href="/question1" role="button">Log in for your deals</a>
     </p>
     </div>
 </div>
