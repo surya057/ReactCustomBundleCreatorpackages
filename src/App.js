@@ -13,6 +13,8 @@ import {
   Question8, } from './component/questions';
 import PageShell from './component/Pageshell';
 import MultipleCards from './component/MultipleCards';
+import packagesPlan from './component/Package';
+
 
 import './App.css';
 
@@ -29,6 +31,7 @@ const App = () => (
       <Route path="/question8" component={PageShell(Question8)} />
       <Route path="/loading" component={PageShell(Loading)} />
       <Route path="/plansPage" component={PageShell(MultipleCards)} />
+      <Route path="/packagesPlan" component={PageShell(packagesPlan)} />
   </div>
 );
 
